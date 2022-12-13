@@ -1,0 +1,19 @@
+<odoo>
+    <data noupdate="1">
+        <record id="patient_demo_01" model="patient.patient">
+            <field name="patient_name">Mark</field>
+            <field name="address">Ahmedabad</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=360))"/>
+        </record>
+        <record id="patient_demo_02" model="patient.patient">
+            <field name="patient_name">Nayan</field>
+            <field name="address">Junagadh</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=480))"/>
+        </record>
+        <record id="patient_demo_03" model="patient.patient">
+            <field name="patient_name">Rahul</field>
+            <field name="address">Rajkot</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=276))"/>
+        </record>
+    </data>
+</odoo>

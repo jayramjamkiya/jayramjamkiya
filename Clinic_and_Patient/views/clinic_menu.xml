@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="clinic_management_menu_root"
+              name="clinic and patient manage "/>
+</odoo>

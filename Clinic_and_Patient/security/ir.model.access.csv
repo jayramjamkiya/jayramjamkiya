@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_patient_patient_patient,access_patient_patient,Clinic_and_Patient.model_patient_patient,Clinic_and_Patient.Clinic_and_Patient_patient,1,0,0,0
+access_patient_patient_admin,access_patient_patient,Clinic_and_Patient.model_patient_patient,Clinic_and_Patient.Clinic_and_Patient_admin,1,1,1,1
+Clinic_and_Patient.access_doctor_doctor,access_doctor_doctor,Clinic_and_Patient.model_doctor_doctor,base.group_user,1,1,1,1
+Clinic_and_Patient.access_opd_opd,access_opd_opd,Clinic_and_Patient.model_opd_opd,base.group_user,1,1,1,1
+Clinic_and_Patient.access_class_wiz_action,access_class_wiz_action,Clinic_and_Patient.model_class_wiz_action,base.group_user,1,1,1,1
+Clinic_and_Patient.access_department_department,access_department_department,Clinic_and_Patient.model_department_department,base.group_user,1,1,1,1
+Clinic_and_Patient.access_medicine_medicine,access_medicine_medicine,Clinic_and_Patient.model_medicine_medicine,base.group_user,1,1,1,1
+Clinic_and_Patient.access_medi_medi,access_medi_medi,Clinic_and_Patient.model_medi_medi,base.group_user,1,1,1,1

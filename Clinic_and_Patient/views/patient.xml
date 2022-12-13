@@ -1,0 +1,73 @@
+<odoo>
+
+    <!--       Tree view    -->
+    <record id="patients_tree_view" model="ir.ui.view">
+        <field name="name">patients.tree</field>
+        <field name="model">patient.patient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="patient_num"/>
+                <field name="patient_name"/>
+                <field name="address"/>
+                <field name="dob"/>
+                <field name="age"/>
+            </tree>
+        </field>
+    </record>
+    <!--      Form view    -->
+    <record id="patients_form_view" model="ir.ui.view">
+        <field name="name">patients.form</field>
+        <field name="model">patient.patient</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+
+                    <div>
+                        <h1>
+                            <field name="patient_num" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="image"/>
+                        <field name="patient_name"/>
+                        <field name="address"/>
+                        <field name="dob"/>
+                        <field name="age"/>
+                        <field name="user_id"/>
+                        <field name="email_id"/>
+                        <field name="phone"/>
+                        <field name="color" widget="color_picker"/>
+<!--                        wizard button-->
+                        <button name="%(class_wiz_action)d"
+                                class="btn-secondary"
+                                string="Create OPD "
+                                type="action"/>
+                        <!--access right button mate                         -->
+
+                        <button name="action_create_patient"
+                                string="create user"
+                                type="object"
+                                width="300"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="patients_menu_action" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">patient.patient</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+    </record>
+    <menuitem id="patient_menus"
+              name="patient"
+              action="patients_menu_action"
+              parent="clinic_management_menu_root"/>
+
+<!--    button in button for example opd in opd & patient -->
+<!--    <menuitem id="patient_manus"-->
+<!--              name="patient"-->
+<!--              action="patients_menu_action"-->
+<!--              parent="opd_manu"/>-->
+</odoo>

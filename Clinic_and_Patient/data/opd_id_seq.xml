@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="seq_opd_number" model="ir.sequence">
+            <field name="name">opd</field>
+            <field name="code">opd.opd</field>
+            <field name="prefix">OP</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <!--    Skin Medicines      -->
+        <record id="medicine_demo_01" model="medicine.medicine">
+            <field name="medicine_name">Allantoin</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_01"/>
+        </record>
+        <record id="medicine_demo_02" model="medicine.medicine">
+            <field name="medicine_name">Alclometasone</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_01"/>
+        </record>
+        <record id="medicine_demo_03" model="medicine.medicine">
+            <field name="medicine_name">Amcinonide</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_01"/>
+        </record>
+        <!--    Dental Medicines      -->
+        <record id="medicine_demo_04" model="medicine.medicine">
+            <field name="medicine_name">Acetaminophen</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_02"/>
+        </record>
+        <record id="medicine_demo_05" model="medicine.medicine">
+            <field name="medicine_name">Anesthetics</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_02"/>
+        </record>
+        <!--    Eye Medicines      -->
+        <record id="medicine_demo_06" model="medicine.medicine">
+            <field name="medicine_name">Acetazolamide</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_03"/>
+        </record>
+        <record id="medicine_demo_07" model="medicine.medicine">
+            <field name="medicine_name">Acetylcysteine</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_03"/>
+        </record>
+        <record id="medicine_demo_08" model="medicine.medicine">
+            <field name="medicine_name">Aciclovir</field>
+            <field name="madicine_id" ref="Clinic_and_Patient.department_demo_03"/>
+        </record>
+    </data>
+</odoo>

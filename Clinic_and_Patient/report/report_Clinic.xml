@@ -1,0 +1,132 @@
+<odoo>
+    <template id="report_clinic">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <h1>Clinic_and_patient</h1>
+                    <div style="margin-right; float:right;">
+                        <br>
+                            Name:
+                            <t t-esc="doc.name_id.patient_name"/>
+                        </br>
+                        <br>
+                            Address:
+                            <t t-esc="doc.address"/>
+                        </br>
+                        <br>
+                            Birth Date:
+                            <t t-esc="doc.dob"/>
+                        </br>
+                        <br>
+                            age:
+                            <t t-esc="doc.age"/>
+                        </br>
+                    </div>
+                    <!--                    <div class="progress" style="height:20px">-->
+                    <div class="progress-bar bg-dark" style="width:100%;height:5px">
+                        <!--                        </div>-->
+                    </div>
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <h2 class="mt16">
+                            <span t-if="doc.state not in ['draft','confirmed']">opd #</span>
+                            <span t-if="doc.state in ['draft','confirmed']">patient report#</span>
+                            <span t-field="doc.opd_id"/>
+                        </h2>
+                    </div>
+
+                    <div class="row mt32 mb32" id="informations">
+                        <div t-if="doc.doc_id" class="col-auto col-3 mw-100 mb-2">
+                            <strong>Your Reference:</strong>
+                            <p class="m-0" t-field="doc.doc_id"/>
+                        </div>
+                        <div t-if="doc.dob" class="col-auto col-3 mw-100 mb-2">
+                            <strong>Order Date:</strong>
+                            <p class="m-0" t-field="doc.dob"/>
+                        </div>
+                        <div t-if="doc.dep_id" class="col-auto col-3 mw-100 mb-2" name="department">
+                            <strong>department:</strong>
+                            <p class="m-0" t-field="doc.dep_id"/>
+                        </div>
+                    </div>
+                    <t t-set="display_tax" t-value="any(l.tax_id for l in doc.med_ids_test)"/>
+                    <table class="table table-bordered table-secondary o_main_table">
+                        <thead style="display: table-row-group">
+                            <tr>
+                                <th name="th_medicine_name" class="text-left">medicine_name</th>
+                                <th name="th_department" class="text-right">department</th>
+                                <th name="th_Quantity" class="text-right">Quantity</th>
+                                <th name="th_Unit_Price" class="text-right">Unit_Price</th>
+                                <th name="th_tax_amount" t-if="display_tax" class="text-right">tax_amount</th>
+                                <th name="th_Total" class="text-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs.med_ids_test" t-as="line">
+                                <tr>
+                                    <td name="td_name">
+                                        <span t-field="line.medicine_id_new"/>
+                                    </td>
+                                    <td name="td_med_id" class="text-right">
+                                        <span t-field="line.dep_id"/>
+                                    </td>
+                                    <td name="td_med_id" class="text-right">
+                                        <span t-field="line.qty"/>
+                                    </td>
+                                    <td name="td_med_id" class="text-right">
+                                        <span t-field="line.price"/>
+                                    </td>
+                                    <t>
+                                        <td name="td_med_id" t-if="display_tax" class="text-right">
+                                            <span t-field="line.tax_id"/>
+                                        </td>
+                                    </t>
+                                    <td name="td_med_id" class="text-right">
+                                        <span t-field="line.subtotal"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                    <div style="margin-left: auto; float: right;">
+                        <t t-if="doc.med_ids_test">
+                            <h5>
+                                <b>untax :
+                                    <span t-field="doc.untax_amount"/>
+                                </b>
+                            </h5>
+                            <h5>
+                                <t t-if="doc.tax_amount > 1">
+                                    <b>Tax
+                                        <span t-field="doc.tax_amount"/>
+                                    </b>
+                                </t>
+                            </h5>
+                            <h5>
+                                <b>Total :
+                                    <span t-field="doc.total_amount"/>
+                                </b>
+                            </h5>
+                        </t>
+                    </div>
+                    <div t-if="doc.signature" class="mt32 ml64 mr4" name="signature">
+                        <!--                         class="offset-8" right sid -->
+                        <div>
+                            <strong>Signature</strong>
+                        </div>
+                        <!--                         class="offset-8" right sid-->
+                        <div>
+                            <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                        </div>
+                        <!--                         class="offset-8 text-center" right sid-->
+                        <div>
+                            <p t-field="doc.signed_by"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
+
+

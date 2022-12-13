@@ -1,0 +1,36 @@
+<odoo>
+    <record id="wiz_action_form_view" model="ir.ui.view">
+        <field name="name">class.wiz.action.form</field>
+        <field name="model">class.wiz.action</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="patient_name"/>
+                        <field name="address"/>
+                        <field name="dob"/>
+                        <field name="department_id"/>
+                        <field name="doctor_id"/>
+
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="create_opd_form"
+                            string="Create"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel"
+                            class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="class_wiz_action" model="ir.actions.act_window">
+        <field name="name">Create OPD</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">class.wiz.action</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

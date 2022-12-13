@@ -1,0 +1,647 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Clinic_and_Patient
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-14 07:12+0000\n"
+"PO-Revision-Date: 2022-11-14 07:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.report,print_report_name:Clinic_and_Patient.Clinic_report
+msgid "'Clinic_report'"
+msgstr "'क्लिनिक_रिपोर्ट'"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.doctor_management_form
+msgid "<span class=\"o_stat_text\">Doctor OPD</span>"
+msgstr "डॉक्टर ओपीडी"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "<strong>Order Date:</strong>"
+msgstr "आर्डर की तारीख"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "<strong>Signature</strong>"
+msgstr "हस्ताक्षर"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "<strong>Your Reference:</strong>"
+msgstr "तुम्हार सन्दर्भ में"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "<strong>department:</strong>"
+msgstr "विभाग"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "<strong>medicine:</strong>"
+msgstr "दवा"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.opd_form_view
+msgid "Add Medicines"
+msgstr "दवाएं जोड़ें"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__address
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__address
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__address
+msgid "Address"
+msgstr "पता"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Address:"
+msgstr "पता"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__age
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__age
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__age
+msgid "Age"
+msgstr "आयु"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Birth Date:"
+msgstr "जन्म तिथि"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__opd_opd__state__cancel
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.opd_form_view
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.wiz_action_form_view
+msgid "Cancel"
+msgstr "रद्द करना"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_6
+msgid "Chetan"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model:ir.module.category,name:Clinic_and_Patient.Clinic_and_Patient_access
+msgid "Clinic and Patient"
+msgstr "क्लिनिक और रोगी"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.report,name:Clinic_and_Patient.Clinic_report
+msgid "Clinic report"
+msgstr "'क्लिनिक रिपोर्ट'"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Clinic_and_patient"
+msgstr "क्लिनिक_और_रोगी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__company_id
+msgid "Company"
+msgstr "कंपनी"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.opd_form_view
+msgid "Confirm"
+msgstr "पुष्टि करें"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__opd_opd__state__confirmed
+msgid "Confirmed"
+msgstr "की पुष्टि की"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.wiz_action_form_view
+msgid "Create"
+msgstr "सृजन करना"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.class_wiz_action
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.patients_form_view
+msgid "Create OPD"
+msgstr "ओपीडी बनाएं"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__create_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__create_uid
+msgid "Created by"
+msgstr "के द्वारा बनाई गई"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__create_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__create_date
+msgid "Created on"
+msgstr "पर बनाया"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__currency_id
+msgid "Currency"
+msgstr "मुद्रा"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__dob
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__dob
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__dob
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__dob
+msgid "Date of birth"
+msgstr "जन्म की तारीख"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,help:Clinic_and_Patient.field_opd_opd__signed_on
+msgid "Date of the signature."
+msgstr "हस्ताक्षर की तिथि"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.dep_menu_action
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__department_id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__department_id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__dep_id
+msgid "Department"
+msgstr "विभाग"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__department
+msgid "Department Name"
+msgstr "विभाग का नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__display_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__display_name
+msgid "Display Name"
+msgstr "प्रदर्शित होने वाला नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__doctor_id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__doctor_ids
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__doc_id
+msgid "Doctor"
+msgstr "चिकित्सक"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__doctor_num
+msgid "Doctor Number"
+msgstr "डॉक्टर नंबर"
+
+#. module: Clinic_and_Patient
+#: code:addons/Clinic_and_Patient/models/doctor.py:0
+#, python-format
+msgid "Doctor OPD"
+msgstr "डॉक्टर ओपीडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__opd_opd__state__done
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.opd_form_view
+msgid "Done"
+msgstr "पूर्ण"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__opd_opd__state__draft
+msgid "Draft"
+msgstr "प्रारूप"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_1
+msgid "Gautam"
+msgstr "गौतम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__doctor_doctor__priority__2
+msgid "High"
+msgstr "उच्च"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__id
+msgid "ID"
+msgstr "पहचान"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd____last_update
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient____last_update
+msgid "Last Modified on"
+msgstr "अंतिम बार संशोधित"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__write_uid
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__write_uid
+msgid "Last Updated by"
+msgstr "अंतिम बार संशोधित"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_class_wiz_action__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_department_department__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__write_date
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__write_date
+msgid "Last Updated on"
+msgstr "अंतिम बार अद्यतन किया गया"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__doctor_doctor__priority__0
+msgid "Low"
+msgstr "कम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__dep_id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__madicine_id
+msgid "Madicine use"
+msgstr "दवा का उपयोग"
+
+#. module: Clinic_and_Patient
+#: model:patient.patient,patient_name:Clinic_and_Patient.patient_demo_01
+msgid "Mark"
+msgstr "निशान"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_2
+msgid "Maulik"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__med_ids_test
+msgid "Med Ids Test"
+msgstr "मेड आईडी टेस्ट"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__medi_name
+msgid "Medi Name"
+msgstr "मेडी नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.med_menu_action
+msgid "Medicine"
+msgstr "मेडी नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__medicine_id_new
+msgid "Medicine Id New"
+msgstr "मेडिसिन आईडी नया"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__medicine_name
+msgid "Medicine Name"
+msgstr "दवा का नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__med_ids
+msgid "Medicines"
+msgstr "दवाइयाँ"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__doctor_doctor__priority__1
+msgid "Medium"
+msgstr "मध्यम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__doc_name
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__patient_name
+msgid "Name"
+msgstr "नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,help:Clinic_and_Patient.field_opd_opd__signed_by
+msgid "Name of the person that signed the SO."
+msgstr "SO . पर हस्ताक्षर करने वाले व्यक्ति का नाम"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Name:"
+msgstr "नाम"
+
+#. module: Clinic_and_Patient
+#: model:patient.patient,patient_name:Clinic_and_Patient.patient_demo_02
+msgid "Nayan"
+msgstr "नयन"
+
+#. module: Clinic_and_Patient
+#: code:addons/Clinic_and_Patient/models/doctor.py:0
+#: code:addons/Clinic_and_Patient/models/doctor.py:0
+#: code:addons/Clinic_and_Patient/models/opd.py:0
+#: code:addons/Clinic_and_Patient/models/opd.py:0
+#: code:addons/Clinic_and_Patient/models/patient.py:0
+#: code:addons/Clinic_and_Patient/models/patient.py:0
+#, python-format
+msgid "New"
+msgstr "नया"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.opd_menu_action
+msgid "OPD"
+msgstr "ओपीडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__opd_id
+msgid "OPD ID"
+msgstr "ओपीडी आईडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__name_id
+msgid "Patient Name"
+msgstr "रोगी का नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__patient_num
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__patient_num
+msgid "Patient Number"
+msgstr "रोगी संख्या"
+
+#. module: Clinic_and_Patient
+#: code:addons/Clinic_and_Patient/models/patient.py:0
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__opd_count
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__opd_count
+#, python-format
+msgid "Patient OPD"
+msgstr "रोगी ओपीडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.patients_menu_action
+msgid "Patients"
+msgstr "मरीजों"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__price
+msgid "Price"
+msgstr "कीमत"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__priority
+msgid "Priority"
+msgstr "वरीयता"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__qty
+msgid "Qty"
+msgstr "मात्रा"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Quantity"
+msgstr "मात्रा"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_5
+msgid "Rafiq"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model:patient.patient,patient_name:Clinic_and_Patient.patient_demo_03
+msgid "Rahul"
+msgstr "राहुल"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_3
+msgid "Raj"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.opd_form_view
+msgid "Reset to draft"
+msgstr "ड्राफ़्ट पर रीसेट करें"
+
+#. module: Clinic_and_Patient
+#: model:doctor.doctor,doc_name:Clinic_and_Patient.doctor_demo_line_4
+msgid "Rohan"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__signature
+msgid "Signature"
+msgstr "हस्ताक्षर"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,help:Clinic_and_Patient.field_opd_opd__signature
+msgid "Signature received through the portal."
+msgstr "पोर्टल के माध्यम से प्राप्त हस्ताक्षर"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__signed_by
+msgid "Signed By"
+msgstr "द्वारा हस्ताक्षर किए"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__signed_on
+msgid "Signed On"
+msgstr "पर हस्ताक्षर किए"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__state
+msgid "Status"
+msgstr "दर्जा"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__subtotal
+msgid "Subtotal"
+msgstr "उप-योग"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__tax_amount
+msgid "Tax Amount"
+msgstr "कर राशि"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__tax_price
+msgid "Tax Price"
+msgstr "कर मूल्य"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medi_medi__tax_id
+msgid "Taxes"
+msgstr "करों"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Total"
+msgstr "कुल"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Total :"
+msgstr "कुल"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__total_amount
+msgid "Total Amount"
+msgstr "कुल राशि"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__total_price
+msgid "Total Price"
+msgstr "कुल कीमत"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "Unit_Price"
+msgstr "यूनिट मूल्य"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_opd_opd__untax_amount
+msgid "Untax Amount"
+msgstr "करमुक्त राशि"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__user_id
+msgid "User ID"
+msgstr "यूज़र आईडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields.selection,name:Clinic_and_Patient.selection__doctor_doctor__priority__3
+msgid "Very High"
+msgstr "बहुत ऊँचा"
+
+#. module: Clinic_and_Patient
+#: model:res.groups,name:Clinic_and_Patient.Clinic_and_Patient_admin
+msgid "admin"
+msgstr "व्यवस्थापक"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "age:"
+msgstr "आयु"
+
+#. module: Clinic_and_Patient
+#: model:ir.ui.menu,name:Clinic_and_Patient.clinic_management_menu_root
+msgid "clinic and patient manage "
+msgstr "क्लिनिक और रोगी प्रबंधन"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.doctor_management_form
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.patients_form_view
+msgid "create user"
+msgstr "उपयोगकर्ता बनाइये"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_department_department
+#: model:ir.ui.menu,name:Clinic_and_Patient.department_menu
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "department"
+msgstr "विभाग"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_doctor_doctor
+#: model:ir.ui.menu,name:Clinic_and_Patient.doctor_menus
+#: model:res.groups,name:Clinic_and_Patient.Clinic_and_Patient_doctor
+msgid "doctor"
+msgstr "चिकित्सक"
+
+#. module: Clinic_and_Patient
+#: model:ir.actions.act_window,name:Clinic_and_Patient.doctors_action
+msgid "doctor manage"
+msgstr "डॉक्टर प्रबंधन"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_doctor_doctor__email_id
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__email_id
+msgid "email_id"
+msgstr "ईमेल आईडी"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_medicine_medicine
+#: model:ir.ui.menu,name:Clinic_and_Patient.medicine_menus
+msgid "medicine"
+msgstr "दवा"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_medi_medi
+msgid "medicine detals"
+msgstr "दवा विवरण"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "medicine_name"
+msgstr "दवा_नाम"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_opd_opd
+#: model:ir.ui.menu,name:Clinic_and_Patient.opd_menus
+msgid "opd"
+msgstr "ओपीडी"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "opd #"
+msgstr "ओपीडी #"
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_class_wiz_action
+msgid "opd_from"
+msgstr ""
+
+#. module: Clinic_and_Patient
+#: model:ir.model,name:Clinic_and_Patient.model_patient_patient
+#: model:ir.ui.menu,name:Clinic_and_Patient.patients_menus
+#: model:res.groups,name:Clinic_and_Patient.Clinic_and_Patient_patient
+msgid "patient"
+msgstr "रोगी"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "patient report#"
+msgstr "रोगी रिपोर्ट"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "tax :"
+msgstr "कर"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "tax_amount"
+msgstr "कर राशि"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_medicine_medicine__Unit_Price
+msgid "unit price"
+msgstr "यूनिट मूल्य"
+
+#. module: Clinic_and_Patient
+#: model_terms:ir.ui.view,arch_db:Clinic_and_Patient.report_clinic
+msgid "untax :"
+msgstr "कर मुक्त"
+
+#. module: Clinic_and_Patient
+#: model:ir.model.fields,field_description:Clinic_and_Patient.field_patient_patient__user_id
+msgid "user_id"
+msgstr "यूज़र आईडी"

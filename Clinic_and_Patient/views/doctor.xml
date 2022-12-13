@@ -1,0 +1,89 @@
+<odoo>
+    <!-- tree view -->
+
+    <record id="doctors_management_tree" model="ir.ui.view">
+        <field name="name">doctors.Management.tree</field>
+        <field name="model">doctor.doctor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="doctor_num"/>
+                <field name="doc_name"/>
+                <field name="dob"/>
+                <field name="age"/>
+                <field name="address"/>
+                <field name="department_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- search view -->
+
+    <record id="doctors_management_search" model="ir.ui.view">
+        <field name="name">doctors.Management.search</field>
+        <field name="model">doctor.doctor</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="doc_name"/>
+                <field name="age"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- from view -->
+    <record id="doctor_management_form" model="ir.ui.view">
+        <field name="name">doctors.Management.form</field>
+        <field name="model">doctor.doctor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box"
+                         name="button_box">
+                        <button name="action_doctor_opd"
+                                class="oe_stat_button"
+                                type="object"
+                                icon="fa-pencil-square-o">
+                            <div class="o_stat_info">
+                                <field name="opd_count" class="o_stat_value"/>
+                                <span class="o_stat_text">Doctor OPD</span>
+                            </div>
+                        </button>
+                    </div>
+                    <group>
+                        <group name="doctors_details">
+                            <field name="doctor_num"/>
+                            <field name="doc_name"/>
+                            <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="dob"/>
+                            <field name="age"/>
+                            <field name="department_id"/>
+                            <field name="user_id"/>
+                            <field name="email_id"/>
+                            <!--access right button mate                         -->
+
+                            <button name="action_create_doctor"
+                                    string="create user"
+                                    type="object"
+                                    width="300"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="doctors_action" model="ir.actions.act_window">
+        <field name="name">doctor manage</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">doctor.doctor</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="context">{}</field>
+    </record>
+    <menuitem id="doctor_menus"
+              name="doctor"
+              parent="clinic_management_menu_root"
+              action="doctors_action"/>
+</odoo>

@@ -1,0 +1,46 @@
+<odoo>
+    <data noupdate="1">
+        <!--    Skin Department      -->
+        <record id="department_demo_01" model="department.department">
+            <field name="department">Skin</field>
+        </record>
+        <record id="doctor_demo_line_1" model="doctor.doctor">
+            <field name="doc_name">Gautam</field>
+            <field name="address">Ahmedabad</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=360))"/>
+        </record>
+        <record id="doctor_demo_line_2" model="doctor.doctor">
+            <field name="doc_name">Maulik</field>
+            <field name="address">Rajkot</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=240))"/>
+        </record>
+        <!--    Dental Department      -->
+        <record id="department_demo_02" model="department.department">
+            <field name="department">Dental</field>
+        </record>
+        <record id="doctor_demo_line_3" model="doctor.doctor">
+            <field name="doc_name">Raj</field>
+            <field name="address">Surat</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(years=33))"/>
+        </record>
+        <record id="doctor_demo_line_4" model="doctor.doctor">
+            <field name="doc_name">Rohan</field>
+            <field name="address">Baroda</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=480))"/>
+        </record>
+        <!--    Eye Department      -->
+        <record id="department_demo_03" model="department.department">
+            <field name="department">Eye</field>
+        </record>
+        <record id="doctor_demo_line_5" model="doctor.doctor">
+            <field name="doc_name">Rafiq</field>
+            <field name="address">Jaipur</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=500))"/>
+        </record>
+        <record id="doctor_demo_line_6" model="doctor.doctor">
+            <field name="doc_name">Chetan</field>
+            <field name="address">Bombay</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(years=30))"/>
+        </record>
+    </data>
+</odoo>

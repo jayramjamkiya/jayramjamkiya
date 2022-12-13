@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <record id="opd_demo_1" model="opd.opd">
+            <field name="name_id" ref="patient_demo_01"/>
+            <field name="address">Ahmedabad</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=360))"/>
+            <field name="dep_id" ref="department_demo_01"/>
+            <field name="doc_id" ref="doctor_demo_line_1"/>
+            <field name="med_ids"
+                   eval="[(6, 0, [ ref('Clinic_and_Patient.medicine_demo_01'),
+                                   ref('Clinic_and_Patient.medicine_demo_02')])]"/>
+
+        </record>
+        <record id="opd_demo_2" model="opd.opd">
+            <field name="name_id" ref="patient_demo_02"/>
+            <field name="address">Junagadh</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=360))"/>
+            <field name="dep_id" ref="department_demo_01"/>
+            <field name="doc_id" ref="doctor_demo_line_2"/>
+            <field name="med_ids"
+                   eval="[(6, 0, [ ref('Clinic_and_Patient.medicine_demo_04'),
+                                   ref('Clinic_and_Patient.medicine_demo_05')])]"/>
+
+        </record>
+        <record id="opd_demo_3" model="opd.opd">
+            <field name="name_id" ref="patient_demo_03"/>
+            <field name="address">Rajkot</field>
+            <field name="dob" eval="(datetime.today() - relativedelta(months=360))"/>
+            <field name="dep_id" ref="department_demo_01"/>
+            <field name="doc_id" ref="doctor_demo_line_2"/>
+            <field name="med_ids"
+                   eval="[(6, 0, [ ref('Clinic_and_Patient.medicine_demo_06'),
+                                   ref('Clinic_and_Patient.medicine_demo_07'),
+                                   ref('Clinic_and_Patient.medicine_demo_08')])]"/>
+
+        </record>
+    </data>
+</odoo>

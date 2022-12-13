@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record model="ir.module.category" id="Clinic_and_Patient_access">
+            <field name="name">Clinic and Patient</field>
+        </record>
+
+        <record id="Clinic_and_Patient_admin" model="res.groups">
+            <field name="name">admin</field>
+            <field name="category_id" ref="Clinic_and_Patient.Clinic_and_Patient_access"/>
+        </record>
+
+        <record id="Clinic_and_Patient_patient" model="res.groups">
+            <field name="name">patient</field>
+            <field name="category_id" ref="Clinic_and_Patient.Clinic_and_Patient_access"/>
+        </record>
+
+        <record id="Clinic_and_Patient_doctor" model="res.groups">
+            <field name="name">doctor</field>
+            <field name="category_id" ref="Clinic_and_Patient.Clinic_and_Patient_access"/>
+        </record>
+
+        <record model="ir.rule" id="medical_doctor_rule">
+            <field name="name">medical doctor opd</field>
+            <field name="model_id" ref="model_opd_opd"/>
+            <field name="domain_force">[('doc_id.user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4,ref('Clinic_and_Patient.Clinic_and_Patient_doctor'))]"/>
+        </record>
+
+        <record model="ir.rule" id="medical_patient_rule">
+            <field name="name">medical patient</field>
+            <field name="model_id" ref="model_patient_patient"/>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4,ref('Clinic_and_Patient.Clinic_and_Patient_patient'))]"/>
+        </record>
+    </data>
+</odoo>
+
